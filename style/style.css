@@ -357,7 +357,7 @@ header nav{
 }
 .text-slider span{
     display: inline-block;
-    animation: slideText 5s linear infinite;
+    animation: slideText 10s linear infinite;
 }
 @keyframes slideText {
     0% { transform: translateX(100%); }
