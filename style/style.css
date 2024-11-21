@@ -288,7 +288,7 @@ header nav{
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 
 .about-section img {
@@ -357,7 +357,7 @@ header nav{
 }
 .text-slider span{
     display: inline-block;
-    animation: slideText 10s linear infinite;
+    animation: slideText 5s linear infinite;
 }
 @keyframes slideText {
     0% { transform: translateX(100%); }
@@ -393,3 +393,24 @@ header nav{
       display: none;
     }
   }
+
+  #timeline .absolute {
+    position: absolute;
+  }
+  
+  #timeline .rounded-full {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  #timeline img {
+    object-fit: cover;
+  }
+  
+  #timeline h3 {
+    font-size: 1.25rem;
+  }
+  
+  #timeline p {
+    margin-top: 0.5rem;
+  }
+  
