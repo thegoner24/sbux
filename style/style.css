@@ -288,6 +288,7 @@ header nav{
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
+    background-color: aliceblue;
 }
 
 .about-section img {
@@ -299,14 +300,12 @@ header nav{
 }
 
 .about-section h2 {
-    color: aliceblue;
     font-size: 3rem;
     margin-bottom: 20px;
     font-family: 'Aboreto', cursive;
 }
 
 .about-section p {
-    color: antiquewhite;
     font-size: 1.25rem;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -347,10 +346,10 @@ header nav{
 
 .text-slider {
     font-size: 1.25rem;
-    color: antiquewhite;
     margin-top: 40px;
     overflow: hidden;
     white-space: nowrap;
+    color: #4f8b69;
     z-index: 10;
     position: relative;
     display: block;
