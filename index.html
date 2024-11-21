@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Milestone 1</title>
+    <meta name="keywords" content="Company Profile Starbucks">
+    <meta name="description" content="Company Profile Starbucks">
+    <meta name="author" content="Guntur Wirayuda">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                accent: 'aliceblue',
+                primary: '#4C956C',
+                footer: '#432818',
+              }
+              
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="bg-gradient-to-r from-emerald-500 to-emerald-900">
+    <header>
+        <figure class="logo">
+            <img src="./assets/img/logo.png" alt="Starbucks Company">
+        </figure>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background-color: #9c4d2f;">
+                        <div class="content">
+                            <h2>Caffe Latte, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                The Caffè Latte is a timeless blend of bold espresso and silky steamed milk, topped with a light layer of foam. Smooth, balanced, and endlessly satisfying.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/img/1.png" alt="">
+                        <figcaption>Caffe Latte, a new product</figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background-color: #f5bfaf;">
+                        <div class="content">
+                            <h2>Strawberry mocha, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                The Strawberry Mocha combines the richness of chocolate, the sweetness of strawberries, and creamy steamed milk for a drink that’s as delightful as dessert.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/img/2.png" alt="">
+                        <figcaption>Strawberry mocha, a new product</figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background-color: #dedfe1;">
+                        <div class="content">
+                            <h2>Doppio espresso, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                The Starbucks Doppio Espresso delivers two perfectly pulled shots of bold espresso for those who crave authentic coffee flavor. No frills, no extras – just pure coffee perfection.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/img/3.png" alt="">
+                        <figcaption>Doppio espresso, a new product</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-color: #7eb63d;">
+                        <div class="content">
+                            <h2>Matcha latte macchiato, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                Crafted with smooth matcha, a hint of espresso, and silky steamed milk, it’s the perfect balance of bold and serene in every cup.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/img/4.png" alt="">
+                        <figcaption>Matcha latte macchiato, a new product</figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <img src="./assets/img/logo.png" alt="">
+            <h2>Our Mission</h2>
+            <p>
+                To inspire and nurture the human spirit— one person, one cup and one neighborhood at a time.
+            </p>
+            <div>
+                <h3 class="text-5xl font-['aboreto',cursive] text-accent py-8">Our Values</h3>
+                <ol>
+                    <li class="text-accent">Creating a culture of warmth and belonging, where everyone is welcome.</li>
+                    <li class="text-accent">Acting with courage, challenging the status quo and finding new ways to grow our company and each other.</li>
+                    <li class="text-accent">Being present, connecting with transparency, dignity and respect.</li>
+                    <li class="text-accent">Delivering our very best in all we do, holding ourselves accountable for results.</li>
+                </ol>
+            </div>
+            <div class="text-slider">
+                <span>We are performance driven, through the lens of humanity.</span>
+            </div>
+        </section>
+
+        
+        <section id="featured" class="py-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl mb-8 text-center text-accent font-['aboreto',cursive]">Products</h2>
+                
+        
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+         
+                    <div class="col-span-1 md:col-span-2 md:row-span-2 h-64 sm:h-80 md:h-96 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://d1r9hss9q19p18.cloudfront.net/uploads/2017/01/starbucks-molten-chocolate_2.jpg" alt="Hot Beverages" class="w-full h-full object-cover">
+                    </div>
+                                <div class="col-span-1 h-64 sm:h-64 md:h-48 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://grapadikonsultan.co.id/wp-content/uploads/2023/09/photo-1637290742802-3c8a0f5bd49b.jpg" alt="Pumpkin Spices Latte" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="col-span-1 h-64 sm:h-40 md:h-48 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://www.nestle.co.id/sites/g/files/pydnoa241/files/styles/brand_image_489_x_275_/public/2023-11/starbucks-packs3.jpg.webp?itok=979SXrJq" alt="Whole Beans" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="col-span-1 md:col-span-2 h-64 sm:h-36 md:h-44 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-95400.jpg" alt="Seasonal Beverages" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <div class="bg-gradient-to-r from-emerald-500 to-emerald-900 py-10">
+            <div class="text-center mb-8">
+              <h2 class="text-5xl font-['aboreto',cursive] text-accent">Starbucks Founder</h2>
+              <p class="text-accent mt-2">
+                The three friends opened their first Starbucks store in Seattle's Pike Place Market on March 30, 1971
+              </p>
+            </div>
+          
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+                <img
+                  src="./assets/img/zev siegl.jpg"
+                  alt="Zev Siegl"
+                  class="w-full h-auto object-cover"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold">Zev Siegl</h3>
+                  <p class="text-gray-500">Founder</p>
+                </div>
+              </div>
+          
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+                <img
+                  src="./assets/img/gordon bowker.jpg"
+                  alt="Gordon Bowker"
+                  class="w-full h-auto object-cover"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold">Gordon Bowker</h3>
+                  <p class="text-gray-500">Founder</p>
+                </div>
+              </div>
+          
+              <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+                <img
+                  src="./assets/img/jerry baldwin.jpg"
+                  alt="Jerry Baldwin"
+                  class="w-full h-auto object-cover"
+                />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold">Jerry Baldwin</h3>
+                  <p class="text-gray-500">Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-r from-emerald-500 to-emerald-900 py-10">
+            <div class="text-center mb-8">
+              <h2 class="text-5xl font-['aboreto',cursive] text-accent ">Get in Touch</h2>
+              <p class="text-accent mt-2">Have questions? Fill out the form below, and we'll get back to you soon!</p>
+            </div>
+          
+            <div class="container mx-auto px-6 md:px-12 lg:px-32">
+              <form class="bg-white shadow-lg rounded-lg p-8 space-y-6">
+                <div>
+                  <label for="name" class="block text-gray-700 font-medium">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    required
+                  />
+                </div>
+          
+                <div>
+                  <label for="email" class="block text-gray-700 font-medium">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    required
+                  />
+                </div>
+          
+                <div>
+                  <label for="message" class="block text-gray-700 font-medium">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Type your message here"
+                    class="w-full mt-2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    required
+                  ></textarea>
+                </div>
+          
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition duration-300"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+</main>
+
+<script src="script.js"></script>
+</body>
+
+<footer class="bg-gradient-to-r from-rose-100 to-teal-100 py-8">
+    <div class="container mx-auto flex flex-wrap justify-between items-start">
+      <!-- Logo Section -->
+      <div class="w-full md:w-1/3 mb-8 md:mb-0 text-center">
+        <img src="./assets/img/logo.png" alt="Logo" class="h-16 mb-4 mx-auto">
+        <p class="text-sm text-bold">Starbucks Company</p>
+        <p class="text-xs ">One Cup, One Person, One Neighborhood</p>
+      </div>
+      
+      <!-- Links Section -->
+      <div class="w-full md:w-1/3 mb-8 md:mb-0 text-center">
+        <ul>
+            <li><a href="#hero" class="hover:text-primary transition gap-4"><i class="fa-solid fa-house" style="color: #4f8b69;"></i>Visit our Journey</a></li>
+            <li><a href="#asymmetrical" class="hover:text-primary transition gap-4"><i class="fa-brands fa-instagram fa-lg"  style="color: #4f8b69;"></i></i>Visit Our Instagram</a></li>
+        </ul>
+      </div>
+      
+      <!-- Google Maps Section -->
+      <div class="w-full md:w-1/3">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.277780237386!2d110.39869379999999!3d-7.760336700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59a3cc9fbdf5%3A0x5535679f18bc224!2sStarbucks%20Reserve%20Pakuwon%20Mall%20Jogja!5e0!3m2!1sen!2sid!4v1732056111331!5m2!1sen!2sid8" 
+          width="100%" 
+          height="200" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="w-full text-center text-bold">
+        <p>Copyright &copy; 2024 Guntur RevoU FSSE</p>
+      </div>
+    </div>
+  </footer>
+</html>
